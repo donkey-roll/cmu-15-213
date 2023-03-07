@@ -27,15 +27,17 @@ two’s complement
 - 数据区间 [-2 ^ 16, 2 ^16 -1]
 - 从最小到最大 Tmin （100…0）  -1 （1111….1）0 ( 0000…0) Tmax (01111…1)
 - most significant 是符号位
-1. unsigned 和 signed 互相转化 见图2
+1. unsigned 和 signed 互相转化 见图2 ![chap2-1.png](https://github.com/donkey-roll/cmu-15-213/blob/main/images/chap2-1.png)
 2. Expanding 和 Truncating
 
 Expand unsigned 补0， signed 补符号位， 结果不会有变化
 
 Truncating 直接把多余的砍掉然后重新翻译成新的值，只有极少数情况结果不变
 
-1. unsigned 和 signed 加法和乘法 见图3， 4
+1. unsigned 和 signed 加法和乘法 见图3， 4 ![chap2-2.png](https://github.com/donkey-roll/cmu-15-213/blob/main/images/chap2-2.png) ![chap2-3.png](https://github.com/donkey-roll/cmu-15-213/blob/main/images/chap2-3.png)
 
 注意unsigned overflow 的话会重新回到0，signed 情况负方向overflow会变成正数，正方向overflow反之
 
 1. Floating point 我放个图如果感兴趣可以仔细研究下，我反正看着头疼 图5
+
+![chap2-4.png](https://github.com/donkey-roll/cmu-15-213/blob/main/images/chap2-4.png)
